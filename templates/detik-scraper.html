@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<table class="table table-borderless">
+    {% for image in images %}
+    <tr>
+        <td>
+            {{ image|safe }}
+        </td>
+    </tr>
+    {% endfor%}
+</table>
+{% endblock %}
